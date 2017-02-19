@@ -29,7 +29,9 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="logo" >
-						<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="Image of Inhabitent logo" />
+						<a href="<?php echo get_home_url(); ?>">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="Image of Inhabitent logo" />
+						</a>
 					</div>
 					<div class="site-nav">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

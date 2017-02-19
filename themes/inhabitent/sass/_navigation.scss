@@ -30,6 +30,8 @@ a {
 	height: 50px; 
 	display: flex;
 	justify-content: center;
+	font-family: 'novecentosanswide';
+	font-weight: normal;
 }
 
 .search-icon{
@@ -41,6 +43,10 @@ a {
 
 .search-input{
 	padding-left: 20px;
+}
+
+.search-field{
+	font-family: "novecentosanswide";
 }
 
 .site-nav{
@@ -59,7 +65,7 @@ a {
 	width: 1120px;
 
 	.logo {
-		width: 50px;
+		width: 52px;
 		align-items: center;
 	}
 
