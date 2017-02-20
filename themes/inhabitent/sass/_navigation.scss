@@ -32,6 +32,9 @@ a {
 	justify-content: center;
 	font-family: 'novecentosanswide';
 	font-weight: normal;
+	background: rgba(255, 255, 255, 0.8 );
+
+	@include fixed-nav;
 }
 
 .search-icon{
@@ -69,12 +72,17 @@ a {
 		align-items: center;
 	}
 
+
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 		width: 100%;
+
+		li:first-child{
+			display: none;
+		}
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -83,8 +91,8 @@ a {
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
+		
 			
-
 			ul {
 				left: -999rem;
 				top: 0;

@@ -9,6 +9,17 @@
 	select {
 		max-width: 100%;
 	}
+
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		
+		a{
+			
+			text-decoration: none;
+		}
+	}
 }
 
 /* Search widget. */

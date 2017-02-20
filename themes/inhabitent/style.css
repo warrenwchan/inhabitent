@@ -439,7 +439,13 @@ a {
   -ms-flex-pack: center;
       justify-content: center;
   font-family: 'novecentosanswide';
-  font-weight: normal; }
+  font-weight: normal;
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%; }
 
 .search-icon {
   -ms-flex-line-pack: center;
@@ -482,6 +488,8 @@ a {
     margin: 0;
     padding-left: 0;
     width: 100%; }
+    .main-navigation ul li:first-child {
+      display: none; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -604,6 +612,12 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .widget ul a {
+      text-decoration: none; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -707,6 +721,10 @@ object {
 .gallery-caption {
   display: block; }
 
+.home .site-content {
+  height: 100vh;
+  background-image: url("../../images/home-hero.jpg"); }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -715,22 +733,54 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  padding-top: 50px; }
 
 .site-footer {
   display: none; }
 
 .content-area {
-  max-width: 1120px; }
-
-.post-container {
-  width: 73%;
-  border-right: 1px solid lightgrey;
-  padding-top: 50px; }
-
-.site-main {
-  display: -ms-flexbox;
-  display: flex; }
+  width: 1120px; }
+  .content-area .site-main {
+    display: -ms-flexbox;
+    display: flex; }
+    .content-area .site-main .post-container {
+      width: 73%;
+      border-right: 1px solid lightgrey;
+      padding-top: 50px; }
+      .content-area .site-main .post-container article {
+        width: 760px;
+        height: 700px; }
+        .content-area .site-main .post-container article .entry-header {
+          display: -ms-flexbox;
+          display: flex;
+          position: relative; }
+          .content-area .site-main .post-container article .entry-header img {
+            width: 760px;
+            height: 520px; }
+          .content-area .site-main .post-container article .entry-header h2 {
+            position: absolute;
+            top: 20px;
+            width: 570px;
+            background-color: #248A83;
+            padding: 10px 25px; }
+            .content-area .site-main .post-container article .entry-header h2 a {
+              color: white;
+              text-decoration: none;
+              font-family: "novecentosanswide";
+              text-transform: uppercase;
+              font-size: 33px;
+              letter-spacing: 2px;
+              line-height: 42px; }
+          .content-area .site-main .post-container article .entry-header .entry-meta {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 5px 20px;
+            background-color: #248a83;
+            color: white;
+            font-family: "novecentosanswide";
+            text-transform: uppercase; }
 
 .widget-area {
   padding: 50px 0 0 50px; }
