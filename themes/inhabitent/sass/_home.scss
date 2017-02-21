@@ -3,9 +3,8 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/home-hero.jpg');
     background-size: cover;
     
-
-
     .hero{
-    
+        height: 100%;
+        @include center;
     }
 }

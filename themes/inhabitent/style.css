@@ -434,17 +434,17 @@ a {
 .site-header {
   border-bottom: 1px lightgrey solid;
   height: 50px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   font-family: 'novecentosanswide';
   font-weight: normal;
   background: rgba(255, 255, 255, 0.8);
   position: fixed;
   left: 0;
   z-index: 9999;
-  width: 100%; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .search-icon {
   -ms-flex-line-pack: center;
@@ -724,6 +724,12 @@ object {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
   background-size: cover; }
+  .home .site-content .hero {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
 
 /*--------------------------------------------------------------
 # Page Templates

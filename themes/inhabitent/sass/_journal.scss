@@ -4,8 +4,7 @@
 
 /* Front page */
 .site-content{
-    display: flex;
-    justify-content: center;
+    @include center;
     padding-top: 50px;
 }
 

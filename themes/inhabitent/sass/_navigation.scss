@@ -28,13 +28,12 @@ a {
 .site-header{
 	border-bottom: 1px lightgrey solid;
 	height: 50px; 
-	display: flex;
-	justify-content: center;
 	font-family: 'novecentosanswide';
 	font-weight: normal;
 	background: rgba(255, 255, 255, 0.8 );
 	
 	@include fixed-nav;
+	@include center;
 }
 
 .search-icon{
