@@ -19,4 +19,18 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
+
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+function my_custom_login_logo() {
+     echo '<style type="text/css">                                                                   
+         h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
+         height: 120px !important; width: 310px !important; background-size: contain !important;}                            
+     </style>';
+}
+add_action('login_head', 'my_custom_login_logo');
+
+function the_url( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );

@@ -14,8 +14,8 @@
 // fixed nav bar
 @mixin fixed-nav {
 	position: fixed;
-	top: 0;
 	left: 0;
 	z-index: 9999;
 	width: 100%;
 }
+

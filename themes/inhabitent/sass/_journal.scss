@@ -13,7 +13,7 @@
     display: none;
 }
 
-.content-area {
+.journal .content-area {
     width: 1120px;   
 
     .site-main {
@@ -27,6 +27,15 @@
             article{
                 width: 760px;
                 height: 700px;
+                position: relative;
+
+                // .moretag{
+                //     position: absolute;
+                //     bottom: 0;
+                //     padding: 20px;
+                //     color: white;
+                //     background-color: teal;
+                // }
 
                 .entry-header{
                     display: flex;
@@ -51,6 +60,9 @@
                             font-size: 33px;
                             letter-spacing: 2px;
                             line-height: 42px;
+                        }
+                        a:hover {
+                            color: #f0e4d1;
                         }
                     }
                     .entry-meta{
