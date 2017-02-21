@@ -25,4 +25,5 @@
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
+	<button class='readmore' type="button">Read More</button>
 </article><!-- #post-## -->
