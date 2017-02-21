@@ -25,15 +25,39 @@ a {
 }
 
 /* Menus */
+.home-site-header{
+	border-bottom: 1px lightgrey solid;
+	height: 50px; 
+	font-family: 'novecentosanswide';
+	font-weight: normal;
+	background: rgba(255, 255, 255, 0 );
+	align-items: center;
+	
+	@include fixed-nav;
+	@include center;
+
+	.search-icon{
+	align-content: center;
+	font-size: 15px;
+	color: #fff;
+	padding-left: 20px;
+	}
+
+	a{
+		color: #fff;
+	}
+}
 .site-header{
 	border-bottom: 1px lightgrey solid;
 	height: 50px; 
 	font-family: 'novecentosanswide';
 	font-weight: normal;
 	background: rgba(255, 255, 255, 0.8 );
+	align-items: center;
 	
 	@include fixed-nav;
 	@include center;
+
 }
 
 .search-icon{

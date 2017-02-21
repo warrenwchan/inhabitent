@@ -5,7 +5,7 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header('home'); ?>
     <div class="hero">
 	    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Full image of Inhabitent logo" />
 	</div>
