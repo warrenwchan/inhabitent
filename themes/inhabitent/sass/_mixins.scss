@@ -24,3 +24,10 @@
 	justify-content: center;
 }
 
+@mixin san-serif {
+	font-family: 'novecentosanswide';
+}
+
+@mixin serif {
+	font-family: 'merriweather';
+}

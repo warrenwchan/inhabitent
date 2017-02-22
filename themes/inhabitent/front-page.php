@@ -1,6 +1,7 @@
+<?php /* Template Name: Home Template */ ?>
 <?php
 /**
- * Template Name: Home Template
+ * The main template file.
  *
  * @package RED_Starter_Theme
  */
@@ -24,8 +25,11 @@
 			setup_postdata( $post ); ?> 
 				<div class="journal-feature-item" >
 					<?php the_post_thumbnail( 'medium' ); ?>
-					<span class="comments"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
-					<span class="title"><?php the_title(); ?>  </span> 
+					<div class="journal-feature-text" >
+						<span class="comments"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
+						<span class="title"><?php the_title(); ?>  </span> 
+					</div>
+					<button class='readmore' type="button">read entry</button>
 				</div>
 			<?php
 			endforeach; 

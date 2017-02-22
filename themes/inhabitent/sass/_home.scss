@@ -19,9 +19,47 @@
         display: flex;
         justify-content: space-between;
 
-        .journal-feature-item{
+        .journal-feature-item {
             width: 355px;
             border: 1px solid lightgrey;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 260px;
+                margin-bottom: 10px;
+            }
+
+            .journal-feature-text{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 150px;
+
+                .comments {
+                    font-size: 0.8rem;
+                }
+                
+                .title {
+                    font-family: 'novecentosanswide';
+                    color: #248A83;
+                    text-transform: uppercase;
+                    letter-spacing: 2px; 
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    line-height: 1.2;   
+                }
+
+                .readmore{
+                    width: 140px;
+                    height: 40px;
+                    background: none;
+                    border: 1px solid;
+                    text-transform: uppercase;
+                    @include san-serif;
+                }
+            }
         }
     }
 }

@@ -770,6 +770,37 @@ object {
     .home .content-area .journal-feature .journal-feature-item {
       width: 355px;
       border: 1px solid lightgrey; }
+      .home .content-area .journal-feature .journal-feature-item img {
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+        margin-bottom: 10px; }
+      .home .content-area .journal-feature .journal-feature-item .journal-feature-text {
+        padding: 10px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        height: 150px; }
+        .home .content-area .journal-feature .journal-feature-item .journal-feature-text .comments {
+          font-size: 0.8rem; }
+        .home .content-area .journal-feature .journal-feature-item .journal-feature-text .title {
+          font-family: 'novecentosanswide';
+          color: #248A83;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: bold;
+          font-size: 1.4rem;
+          line-height: 1.2; }
+        .home .content-area .journal-feature .journal-feature-item .journal-feature-text .readmore {
+          width: 140px;
+          height: 40px;
+          background: none;
+          border: 1px solid;
+          text-transform: uppercase;
+          font-family: 'novecentosanswide'; }
 
 /*--------------------------------------------------------------
 # Page Templates
