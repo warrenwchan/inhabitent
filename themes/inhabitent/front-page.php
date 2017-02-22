@@ -20,7 +20,7 @@
 				<div class="journal-feature">
 					<?php
 					global $post;
-					$args = array( 'posts_per_page' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
+					$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'title' );
 					$postslist = get_posts( $args );
 					foreach ( $postslist as $post ) :
 					setup_postdata( $post ); ?> 

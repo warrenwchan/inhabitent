@@ -29,7 +29,7 @@
             text-transform: uppercase;
             font-weight: 400;
             font-size: 2.4rem;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             margin: 45px;
 
         }
@@ -40,7 +40,7 @@
             justify-content: space-between;
 
             .journal-feature-item {
-                width: 355px;
+                width: 358px;
                 border: 1px solid lightgrey;
 
                 img {
@@ -65,7 +65,7 @@
                         font-family: 'novecentosanswide';
                         color: #248A83;
                         text-transform: uppercase;
-                        letter-spacing: 2px; 
+                        letter-spacing: 1.5px; 
                         font-weight: bold;
                         font-size: 1.4rem;
                         line-height: 1.2;   
@@ -78,6 +78,11 @@
                         border: 1px solid;
                         text-transform: uppercase;
                         @include san-serif;
+
+                        &:hover {
+                            background: #248A83;
+                            color: white;
+                        }
                     }
                 }
             }
