@@ -1,10 +1,6 @@
-<?php /* Template Name: Journal Template */ ?>
-
-
-
-<?php
+ <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Journal Template
  *
  * @package RED_Starter_Theme
  */

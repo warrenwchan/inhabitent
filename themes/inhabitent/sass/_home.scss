@@ -1,10 +1,27 @@
-.home .site-content {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/home-hero.jpg');
-    background-size: cover;
+.home .content-area{
+    height: 1800px;
     
     .hero{
-        height: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/home-hero.jpg');
+        background-size: cover;
         @include center;
+
+
+        .site-content {
+            height: 100vh;
+            padding-top: 0;
+        }
+    }
+
+    .journal-feature {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .journal-feature-item{
+            width: 355px;
+            border: 1px solid lightgrey;
+        }
     }
 }

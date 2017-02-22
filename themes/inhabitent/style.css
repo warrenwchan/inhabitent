@@ -394,7 +394,8 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
+  background: transparent;
+  border: 0px;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -432,17 +433,12 @@ a {
 
 /* Menus */
 .home-site-header {
-  border-bottom: 1px lightgrey solid;
   height: 50px;
   font-family: 'novecentosanswide';
   font-weight: normal;
   background: rgba(255, 255, 255, 0);
   -ms-flex-align: center;
       align-items: center;
-  position: fixed;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -453,6 +449,8 @@ a {
     font-size: 15px;
     color: #fff;
     padding-left: 20px; }
+  .home-site-header .search-form {
+    margin-bottom: 0; }
   .home-site-header a {
     color: #fff; }
 
@@ -750,16 +748,28 @@ object {
 .gallery-caption {
   display: block; }
 
-.home .site-content {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
-  background-size: cover; }
-  .home .site-content .hero {
-    height: 100%;
+.home .content-area {
+  height: 1800px; }
+  .home .content-area .hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
+    background-size: cover;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
+    .home .content-area .hero .site-content {
+      height: 100vh;
+      padding-top: 0; }
+  .home .content-area .journal-feature {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .home .content-area .journal-feature .journal-feature-item {
+      width: 355px;
+      border: 1px solid lightgrey; }
 
 /*--------------------------------------------------------------
 # Page Templates
