@@ -434,11 +434,14 @@ a {
 /* Menus */
 .home-site-header {
   height: 50px;
+  width: 100%;
   font-family: 'novecentosanswide';
   font-weight: normal;
   background: rgba(255, 255, 255, 0);
   -ms-flex-align: center;
       align-items: center;
+  z-index: 999;
+  position: absolute;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -750,57 +753,75 @@ object {
 
 .home .content-area {
   height: 1800px; }
-  .home .content-area .hero {
+  .home .content-area .site-content {
     height: 100vh;
+    padding-top: 0;
+    display: -ms-flexbox;
+    display: flex;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
-    background-size: cover;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .home .content-area .hero .site-content {
+    background-size: cover; }
+    .home .content-area .site-content .hero {
       height: 100vh;
-      padding-top: 0; }
-  .home .content-area .journal-feature {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .home .content-area .journal-feature .journal-feature-item {
-      width: 355px;
-      border: 1px solid lightgrey; }
-      .home .content-area .journal-feature .journal-feature-item img {
-        width: 100%;
-        object-fit: cover;
-        height: 260px;
-        margin-bottom: 10px; }
-      .home .content-area .journal-feature .journal-feature-item .journal-feature-text {
-        padding: 10px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        height: 150px; }
-        .home .content-area .journal-feature .journal-feature-item .journal-feature-text .comments {
-          font-size: 0.8rem; }
-        .home .content-area .journal-feature .journal-feature-item .journal-feature-text .title {
-          font-family: 'novecentosanswide';
-          color: #248A83;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          font-weight: bold;
-          font-size: 1.4rem;
-          line-height: 1.2; }
-        .home .content-area .journal-feature .journal-feature-item .journal-feature-text .readmore {
-          width: 140px;
-          height: 40px;
-          background: none;
-          border: 1px solid;
-          text-transform: uppercase;
-          font-family: 'novecentosanswide'; }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .home .content-area .site-content .hero img {
+        height: 275; }
+  .home .content-area section {
+    max-width: 1120px;
+    margin: 0 auto; }
+    .home .content-area section h2 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      font-family: 'novecentosanswide';
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+      margin: 45px; }
+    .home .content-area section .journal-feature {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .home .content-area section .journal-feature .journal-feature-item {
+        width: 355px;
+        border: 1px solid lightgrey; }
+        .home .content-area section .journal-feature .journal-feature-item img {
+          width: 100%;
+          object-fit: cover;
+          height: 260px;
+          margin-bottom: 10px; }
+        .home .content-area section .journal-feature .journal-feature-item .journal-feature-text {
+          padding: 10px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          height: 150px; }
+          .home .content-area section .journal-feature .journal-feature-item .journal-feature-text .comments {
+            font-size: 0.8rem; }
+          .home .content-area section .journal-feature .journal-feature-item .journal-feature-text .title {
+            font-family: 'novecentosanswide';
+            color: #248A83;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 1.2; }
+          .home .content-area section .journal-feature .journal-feature-item .journal-feature-text .readmore {
+            width: 140px;
+            height: 40px;
+            background: none;
+            border: 1px solid;
+            text-transform: uppercase;
+            font-family: 'novecentosanswide'; }
 
 /*--------------------------------------------------------------
 # Page Templates

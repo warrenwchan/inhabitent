@@ -1,63 +1,84 @@
 .home .content-area{
     height: 1800px;
     
-    .hero{
-        height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/home-hero.jpg');
-        background-size: cover;
-        @include center;
-
-
-        .site-content {
+    .site-content {
             height: 100vh;
             padding-top: 0;
-        }
-    }
+            display: flex;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/home-hero.jpg');
+            background-size: cover;
 
-    .journal-feature {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+            .hero{
+                height: 100vh;
+                @include center;
 
-        .journal-feature-item {
-            width: 355px;
-            border: 1px solid lightgrey;
-
-            img {
-                width: 100%;
-                object-fit: cover;
-                height: 260px;
-                margin-bottom: 10px;
+                img{
+                    height: 275;
+                }
             }
+        }
 
-            .journal-feature-text{
-                padding: 10px;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-                height: 150px;
 
-                .comments {
-                    font-size: 0.8rem;
+    section{
+        max-width: 1120px;
+        margin: 0 auto;
+
+        h2{
+            @include center;
+            @include san-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+            margin: 45px;
+
+        }
+
+        .journal-feature {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .journal-feature-item {
+                width: 355px;
+                border: 1px solid lightgrey;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 260px;
+                    margin-bottom: 10px;
                 }
-                
-                .title {
-                    font-family: 'novecentosanswide';
-                    color: #248A83;
-                    text-transform: uppercase;
-                    letter-spacing: 2px; 
-                    font-weight: bold;
-                    font-size: 1.4rem;
-                    line-height: 1.2;   
-                }
 
-                .readmore{
-                    width: 140px;
-                    height: 40px;
-                    background: none;
-                    border: 1px solid;
-                    text-transform: uppercase;
-                    @include san-serif;
+                .journal-feature-text{
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    height: 150px;
+
+                    .comments {
+                        font-size: 0.8rem;
+                    }
+                    
+                    .title {
+                        font-family: 'novecentosanswide';
+                        color: #248A83;
+                        text-transform: uppercase;
+                        letter-spacing: 2px; 
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                        line-height: 1.2;   
+                    }
+
+                    .readmore{
+                        width: 140px;
+                        height: 40px;
+                        background: none;
+                        border: 1px solid;
+                        text-transform: uppercase;
+                        @include san-serif;
+                    }
                 }
             }
         }

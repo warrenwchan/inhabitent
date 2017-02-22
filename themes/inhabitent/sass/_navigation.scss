@@ -27,12 +27,14 @@ a {
 /* Menus */
 .home-site-header{
 	height: 50px; 
+	width: 100%;
 	font-family: 'novecentosanswide';
 	font-weight: normal;
 	background: rgba(255, 255, 255, 0 );
 	align-items: center;
+	z-index: 999;
+    position: absolute;
 	
-
 	@include center;
 
 	.search-icon{
@@ -40,7 +42,7 @@ a {
 		font-size: 15px;
 		color: #fff;
 		padding-left: 20px;
-	}
+	} 
 
 	.search-form {
 		margin-bottom: 0;
