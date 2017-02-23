@@ -32,12 +32,27 @@
 								<button class='readmore' type="button">read entry</button>
 							</div>
 						</div>
-					<?php
-					endforeach; 
-					wp_reset_postdata();
-					?>
+					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
 			</section>
+
+			<section>
+				<h2>latest adventure</h2>
+				<div class="adventure-container">
+					 <div class="wrap1" >
+						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/canoe-girl.jpg" alt="canoe-girl" />
+					 </div>
+					 <div class="wrap2">
+						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/beach-bonfire.jpg" alt="beach-bonfire" />
+					 </div>
+					 <div class="wrap3">
+						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/mountain-hikers.jpg" alt="mountain-hikers" />
+					 </div>
+					 <div class="wrap3">
+						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/night-sky.jpg" alt="night-sky" />
+					 </div>
+				</div>
+			</sectioin>
 			
 		</main> <!-- #main -->
 

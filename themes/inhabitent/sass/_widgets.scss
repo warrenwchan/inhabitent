@@ -16,11 +16,13 @@
 		list-style-type: none;
 		
 		a{
-			
 			text-decoration: none;
 		}
 	}
 }
+.day-of-week{
+		font-style: bold;
+	}
 
 /* Search widget. */
 .widget_search .search-submit {

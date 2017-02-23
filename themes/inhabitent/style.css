@@ -650,6 +650,9 @@ a {
     .widget ul a {
       text-decoration: none; }
 
+.day-of-week {
+  font-style: bold; }
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
@@ -829,6 +832,26 @@ object {
             .home .content-area section .journal-feature .journal-feature-item .journal-feature-text .readmore:hover {
               background: #248A83;
               color: white; }
+    .home .content-area section .adventure-container {
+      width: 100%;
+      height: 560px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .home .content-area section .adventure-container .wrap1 {
+        width: 50%;
+        height: 100%;
+        overflow: hidden; }
+      .home .content-area section .adventure-container .wrap2 {
+        width: 50%;
+        height: 50%;
+        overflow: hidden; }
+      .home .content-area section .adventure-container .wrap3 {
+        width: 25%;
+        height: 280px; }
+      .home .content-area section .adventure-container img {
+        width: 200%; }
 
 /*--------------------------------------------------------------
 # Page Templates
