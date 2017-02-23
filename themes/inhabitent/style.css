@@ -862,6 +862,65 @@ object {
       .home .content-area section .adventure-container img {
         width: 200%; }
 
+.site-footer {
+  height: 350px;
+  padding: 25px 0;
+  background-image: url("../../images/dark-wood.png");
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .site-footer .site-info {
+    width: 1140px;
+    padding: 40px 0;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-footer .site-info .info-hour {
+      display: -ms-flexbox;
+      display: flex;
+      width: 520px;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      color: white;
+      line-height: 1.5rem; }
+      .site-footer .site-info .info-hour span {
+        font-weight: bold;
+        text-transform: capitalize; }
+      .site-footer .site-info .info-hour .contact div {
+        padding-top: 20px; }
+        .site-footer .site-info .info-hour .contact div i {
+          color: white;
+          font-size: 1.3rem;
+          padding-right: 8px; }
+        .site-footer .site-info .info-hour .contact div a {
+          color: white;
+          text-decoration: none; }
+          .site-footer .site-info .info-hour .contact div a :hover {
+            text-decoration: underline; }
+      .site-footer .site-info .info-hour h2 {
+        color: #d99054;
+        font-family: 'novecentosanswide';
+        letter-spacing: 1px;
+        margin: 0; }
+      .site-footer .site-info .info-hour .a {
+        text-decoration: none; }
+    .site-footer .site-info img {
+      height: 50px; }
+    .site-footer .site-info .wp-power {
+      color: white;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      text-transform: uppercase;
+      margin: 0;
+      font-family: 'novecentosanswide'; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -872,9 +931,6 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   padding-top: 50px; }
-
-.site-footer {
-  display: none; }
 
 .journal .content-area {
   width: 1120px; }
@@ -890,6 +946,7 @@ object {
         height: 750px;
         position: relative; }
         .journal .content-area .site-main .post-container article .readmore {
+          color: black;
           width: 150px;
           height: 45px;
           background: none;

@@ -8,10 +8,6 @@
     padding-top: 50px;
 }
 
-.site-footer{
-    display: none;
-}
-
 .journal .content-area {
     width: 1120px;   
 
@@ -29,6 +25,7 @@
                 position: relative;
 
                 .readmore{
+                    color: black;
                     @include button;
                 }
             }
