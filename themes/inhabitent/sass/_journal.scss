@@ -27,48 +27,54 @@
                 width: 760px;
                 height: 750px;
                 position: relative;
+
+                .readmore{
+                    @include button;
+                }
             }
 
-                .entry-header{
-                    display: flex;
-                    position: relative;
 
-                    img{
-                        width: 760px;
-                        height: 520px;
-                    }
-                    h2{
-                        position: absolute;
-                        top: 20px;
-                        width: 570px;
-                        background-color: #248A83;
-                        padding: 10px 25px;
+            .entry-header{
+                display: flex;
+                position: relative;
 
-                        a{
-                            color: white;
-                            text-decoration: none;
-                            font-family: "novecentosanswide";
-                            text-transform: uppercase;
-                            font-size: 33px;
-                            letter-spacing: 2px;
-                            line-height: 42px;
-                        }
-                        a:hover {
-                            color: #f0e4d1;
-                        }
-                    }
-                    .entry-meta{
-                        position: absolute;
-                        bottom: 0;
-                        right: 0;
-                        padding: 5px 20px;
-                        background-color: #248a83;
+                img{
+                    width: 760px;
+                    height: 520px;
+                }
+
+                h2{
+                    position: absolute;
+                    top: 20px;
+                    width: 570px;
+                    background-color: #248A83;
+                    padding: 10px 25px;  
+
+                    a{
                         color: white;
+                        text-decoration: none;
                         font-family: "novecentosanswide";
                         text-transform: uppercase;
+                        font-size: 33px;
+                        letter-spacing: 2px;
+                        line-height: 42px;
+                    }
+                    a:hover {
+                        color: #f0e4d1;
                     }
                 }
-            
+
+                .entry-meta{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding: 5px 20px;
+                    background-color: #248a83;
+                    color: white;
+                    font-family: "novecentosanswide";
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }

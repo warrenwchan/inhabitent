@@ -31,3 +31,22 @@
 @mixin serif {
 	font-family: 'merriweather';
 }
+
+@mixin button {
+	width: 150px;
+    height: 45px;
+    background: none;
+    border: 1px solid;
+    text-transform: uppercase;
+	align-items: center;
+	text-decoration: none;
+	@include center;
+    @include san-serif;
+
+    &:hover {
+        background: #248A83;
+        color: white;
+		text-decoration:none; 
+     	cursor:pointer;  
+    }
+}

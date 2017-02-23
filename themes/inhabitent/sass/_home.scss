@@ -72,17 +72,7 @@
                     }
 
                     .readmore{
-                        width: 140px;
-                        height: 40px;
-                        background: none;
-                        border: 1px solid;
-                        text-transform: uppercase;
-                        @include san-serif;
-
-                        &:hover {
-                            background: #248A83;
-                            color: white;
-                        }
+                       @include button;
                     }
                 }
             }
