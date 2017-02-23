@@ -12,12 +12,29 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+			  <header class="page-header">
+                        <?php
+                            the_archive_title( '<h1 class="page-title">', '</h1>' );
+                        ?>
+
+                        <?php  //shop stuff on front page
+                            $arg = array( 'taxonomy' => 'product_type',
+                                          'hide_empty' => true);
+                            $terms = get_terms( $arg );
+                        ?>
+
+                        <div class="product-list-style">
+                            <ul>
+                                <?php foreach ( $terms as $term ) : ?>
+                                    <li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+
+                            <?php
+                                the_archive_description( '<div e="taxonomy-description">', '</div>' );
+                            ?>
+                        </div><!-- .product-list-style -->
+                </header><!-- .page-header --> 
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

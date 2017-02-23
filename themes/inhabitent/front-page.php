@@ -15,6 +15,29 @@
 			</div>
 
 			<section>
+				<h2>Shop Stuff</h2>
+                <?php  //shop stuff on front page
+                    $arg = array( 'taxonomy' => 'product_type',
+                                          'hide_empty' => true);
+                    $terms = get_terms( $arg );
+                ?>
+
+                <div class="product-list-style">
+                    <ul>
+                        <?php foreach ( $terms as $term ) : ?>
+                            <li>
+								<a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="Product icon image of <?php echo $term->slug;?> ">
+							</li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <?php
+                        the_archive_description( '<div e="taxonomy-description">', '</div>' );
+                    ?>
+			</section>
+
+			<section>
 				<h2>inhabitent journal</h2>
 				<div class="journal-feature">
 					<?php
@@ -39,16 +62,18 @@
 				<h2>latest adventure</h2>
 				<div class="adventure-container">
 					 <div class="wrap1" >
-						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/canoe-girl.jpg" alt="canoe-girl" />
+						 <!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/canoe-girl.jpg" alt="canoe-girl" />-->
 					 </div>
-					 <div class="wrap2">
-						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/beach-bonfire.jpg" alt="beach-bonfire" />
-					 </div>
-					 <div class="wrap3">
-						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/mountain-hikers.jpg" alt="mountain-hikers" />
-					 </div>
-					 <div class="wrap3">
-						 <img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/night-sky.jpg" alt="night-sky" />
+					 <div class="wrap1">
+						<div class="wrap2">
+							<!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/beach-bonfire.jpg" alt="beach-bonfire" />-->
+						</div>
+						<div class="wrap3">
+							<!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/mountain-hikers.jpg" alt="mountain-hikers" />-->
+						</div>
+						<div class="wrap4">
+							<!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/night-sky.jpg" alt="night-sky" />-->
+						</div>
 					 </div>
 				</div>
 			</sectioin>
@@ -58,3 +83,4 @@
 	</div> <!-- #primary -->
 
 <?php get_footer(); ?>
+
