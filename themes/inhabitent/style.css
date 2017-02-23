@@ -789,6 +789,46 @@ object {
       font-size: 2.4rem;
       letter-spacing: 1.5px;
       margin: 45px; }
+    .home .content-area section .product-list-style {
+      width: 100%; }
+      .home .content-area section .product-list-style ul {
+        margin: 0;
+        padding: 0;
+        display: -ms-flexbox;
+        display: flex; }
+        .home .content-area section .product-list-style ul li {
+          width: 25%;
+          height: 270px;
+          padding: 10px;
+          margin: 10px;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: center;
+              align-items: center;
+          border: 1px solid lightgray;
+          border-top: 4px solid lightgrey;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center; }
+          .home .content-area section .product-list-style ul li:hover {
+            border: 1px solid #d99054;
+            border-top: 4px solid #d99054; }
+          .home .content-area section .product-list-style ul li img {
+            width: 75px;
+            height: 75px; }
+          .home .content-area section .product-list-style ul li p {
+            text-align: center; }
+          .home .content-area section .product-list-style ul li a {
+            padding: 10px 22px;
+            color: white;
+            text-decoration: none;
+            background-color: #248A83;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'novecentosanswide'; }
+            .home .content-area section .product-list-style ul li a:hover {
+              background-color: #19625d; }
     .home .content-area section .journal-feature {
       width: 100%;
       display: -ms-flexbox;

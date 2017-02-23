@@ -34,6 +34,58 @@
 
         }
 
+        .product-list-style{
+            width: 100%;
+            
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+
+                li{
+                    width: 25%;
+                    height: 270px;
+                    padding: 10px;
+                    margin: 10px;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid lightgray;
+                    border-top: 4px solid lightgrey;
+
+                    &:hover{
+                        border: 1px solid #d99054;
+                        border-top: 4px solid #d99054;
+                    }
+
+                    @include center;
+
+                    img{
+                        width: 75px;
+                        height: 75px;
+                    }
+
+                    p{
+                        text-align: center;
+                    }
+
+                    a{  
+                        padding: 10px 22px;
+                        color: white;
+                        text-decoration: none;
+                        background-color: #248A83;
+                        text-transform: uppercase;
+                        text-align: center;
+                        
+                        @include san-serif;
+
+                        &:hover{
+                            background-color: #19625d
+                        }
+                    }
+                }
+            }
+        }
+
         .journal-feature {
             width: 100%;
             display: flex;

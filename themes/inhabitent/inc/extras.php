@@ -91,3 +91,14 @@ if (!is_page_template('page-templates/about.php')) {
     wp_add_inline_style( 'red-starter-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
+
+/**
+ * Changing product archive title.
+ */
+function product_archive_title($title) {
+    if(is_post_type_archive('products')) {
+        $title = 'Shop Stuff';
+    }
+    return $title;
+}
+add_filter('get_the_archive_title', 'product_archive_title'); 

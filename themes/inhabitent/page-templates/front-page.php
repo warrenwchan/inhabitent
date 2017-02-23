@@ -17,17 +17,19 @@
 			<section>
 				<h2>Shop Stuff</h2>
                 <?php  //shop stuff on front page
-                    $arg = array( 'taxonomy' => 'product_type',
-                                          'hide_empty' => true);
+                    $arg = array( 'taxonomy' => 'product_type', 'hide_empty' => true);
                     $terms = get_terms( $arg );
                 ?>
 
                 <div class="product-list-style">
+					
                     <ul>
                         <?php foreach ( $terms as $term ) : ?>
+							<?php $url = get_term_link($term->slug, 'product_type'); ?>
                             <li>
-								<a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a>
 								<img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="Product icon image of <?php echo $term->slug;?> ">
+								<p><?php echo $term->description; ?></p>
+								<a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a>
 							</li>
                         <?php endforeach; ?>
                     </ul>
@@ -42,7 +44,7 @@
 				<div class="journal-feature">
 					<?php
 					global $post;
-					$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'title' );
+					$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'post_date' );
 					$postslist = get_posts( $args );
 					foreach ( $postslist as $post ) :
 					setup_postdata( $post ); ?> 

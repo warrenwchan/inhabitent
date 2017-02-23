@@ -85,8 +85,16 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {   
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'font-awesome-style', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
-
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('red_comments', get_template_directory_uri(). '/js/api.js', array('jquery'), false, true );
+
+	wp_localize_script('red_comments', 'red_vars', array(
+		'rest_url' => rest_url(),
+		'wpapi_nonce' => wp_create_nonce('wp_rest' ), 
+		'post_id' => get_the_ID()
+	));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -111,3 +119,16 @@ function my_theme_scripts() {
     wp_enqueue_script( 'my-great-script', get_template_directory_uri() . '/js/my-great-script.js', array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
+
+// function and action to order classes alphabetically
+
+function sort_shop( $query ) {
+    if ( $query->is_post_type_archive('products') && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 16 );
+		return;
+    }
+}
+
+add_action( 'pre_get_posts', 'sort_shop' );
