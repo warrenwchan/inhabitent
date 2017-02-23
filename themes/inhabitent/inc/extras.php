@@ -39,14 +39,6 @@ function the_url( $url ) {
     return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'the_url' );
-
-
-// post read more link
-function new_excerpt_more($more) { 
-	global $post;
-	return '<a class="moretag" href="'. get_permalink($post->ID) . '">[...]</a>';
-}
-	add_filter('excerpt_more', 'new_excerpt_more');
     
 
 // Remove "Editor" links from sub-menus
