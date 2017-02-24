@@ -129,41 +129,49 @@
                 }
             }
         }
+
         .adventure-container{
             width: 100%;
-            height: 515px;
+            height: 560px;
             display: flex;
-            flex-wrap: wrap;
-
+            margin: 40px 0;
+            
             .wrap1{
                 width: 50%;
-                height: 515px;
-                object-fit: cover;
-                object-position: 50% 50%;
                 background-color: red;
+                background-image: url('../../images/adventure-photos/canoe-girl.jpg');
+                @include background-center;
+                @include box-border;
             }
 
-            .wrap2{
+            .contain-wrap{ 
                 width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            .wrap2{
+                width: 100%;
                 height: 50%;
-                background-color: blue;
+                background-image: url('../../images/adventure-photos/beach-bonfire.jpg');
+                @include background-center;
+                @include box-border;
             }
             
             .wrap3{
-                width: 25%;
+                width: 50%;
                 height: 50%;
-                background-color: orange;
+                background-image: url('../../images/adventure-photos/mountain-hikers.jpg');
+                @include background-center;
+                @include box-border;
             }
 
             .wrap4{
-                width: 25%;
+                width: 50%;
                 height: 50%;
-                background-color: lightseagreen;
-            }
-
-            img{
-                max-width: none;
-                height: 100%;
+                background-image: url('../../images/adventure-photos/night-sky.jpg');
+                @include background-center;
+                @include box-border;
             }
         }
     }

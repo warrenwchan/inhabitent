@@ -50,3 +50,13 @@
      	cursor:pointer;  
     }
 }
+
+@mixin box-border {
+	box-sizing: border-box;
+	border: 10px solid white;
+}
+
+@mixin background-center {
+	background-size: cover;
+    background-position: 50%;
+}
