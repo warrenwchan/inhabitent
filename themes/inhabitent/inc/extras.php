@@ -78,11 +78,12 @@ function inhabitent_about_css() {
 if (!is_page_template('page-templates/about.php')) {
     return;
 }
-    $image = CFS()->get('about_hero_image');
+    $image = CFS()->get('banner_image_upload');
     if(!$image) {
         return;
     }
-    $hero_css = ".page-template-about .entry-header {
+    
+    $hero_css = ".page-template .site-content {
             background:
                 linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
                 url({$image}) no-repeat center bottom;

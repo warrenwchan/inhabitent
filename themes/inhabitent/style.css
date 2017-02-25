@@ -762,6 +762,26 @@ object {
   display: block; }
 
 /* shop items*/
+.site-content {
+  height: 100vh;
+  padding: 0; }
+  .site-content .entry-header {
+    height: 100vh;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .site-content .entry-header h1 {
+      margin: 0; }
+    .site-content .entry-header .entry-title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: white;
+      font-family: 'novecentosanswide'; }
+
 .home .site-content {
   height: 100vh;
   padding-top: 0;
@@ -1059,7 +1079,7 @@ section {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 50px 0; }
+  padding: 0; }
 
 .page-header {
   -ms-flex-direction: column;
