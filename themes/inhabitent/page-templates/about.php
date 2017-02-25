@@ -15,11 +15,15 @@ get_header(); ?>
 			</header><!-- .entry-header -->
 
 			<div class="entry-content" >
+				
 				<h2>Our story</h2>
+				
+				<img src="<?php echo CFS()->get('banner_image_upload'); ?>" />
+
 				<?php echo CFS()->get( 'about_our_story' ); ?>
 
 				<h2>Our Team</h2>
-				<?php echo CFS()->get( 'about_our_theme' ); ?>
+				<?php echo CFS()->get( 'about_our_team' ); ?>
 			</div>
 
 		</main><!-- #main -->

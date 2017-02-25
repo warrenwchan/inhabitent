@@ -8,12 +8,8 @@
     padding-top: 50px;
 }
 
-.journal .content-area {
-    width: 1120px;   
+.journal {
 
-    .site-main {
-        display: flex;
-        
         .post-container {
             width: 73%;
             border-right: 1px solid lightgrey;
@@ -24,12 +20,16 @@
                 height: 750px;
                 position: relative;
 
-                .readmore{
-                    color: black;
-                    @include button;
+                .entry-content {
+                    a{
+                        .read-more {
+                            color: black;
+                            background-color: #248A83;
+                            padding: 10px;
+                        }
+                    }  
                 }
             }
-
 
             .entry-header{
                 display: flex;
@@ -74,15 +74,22 @@
             }
         }
     }
-}
+
 
 
 .widget-area{
+    width: 300px;
     padding: 50px 0 0 50px;
 
     h2{
         font-family: 'novecentosanswide';
         text-transform: uppercase;
         letter-spacing: 2px; 
+    }
+
+    aside{
+        i{
+            padding-right: 10px;
+        }
     }
 }

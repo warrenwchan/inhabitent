@@ -1,26 +1,23 @@
-.home .content-area{
-    height: 1800px;
+.home .site-content {
+    height: 100vh;
+    padding-top: 0;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/home-hero.jpg');
+    background-size: cover;
     
-    .site-content {
-            height: 100vh;
-            padding-top: 0;
-            display: flex;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/home-hero.jpg');
-            background-size: cover;
+    .hero{
+        height: 100vh;
+        @include center;
 
-            .hero{
-                height: 100vh;
-                @include center;
-
-                img{
-                    height: 275;
-                }
-            }
+        img{
+            height: 275;
         }
+    }    
+}
 
 
     section{
-        max-width: 1120px;
+        // max-width: 1120px;
         margin: 0 auto;
 
         h2{
@@ -175,4 +172,3 @@
             }
         }
     }
-}
