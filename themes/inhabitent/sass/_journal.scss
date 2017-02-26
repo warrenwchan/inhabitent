@@ -1,95 +1,104 @@
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-
-/* Front page */
-.site-content{
+.journal .content-area {
+    margin-top: 50px;
     @include center;
-    padding-top: 50px;
-}
 
-.journal {
+    .site-main {
+        display: flex;
+        max-width: 1120px;
 
-        .post-container {
-            width: 73%;
+        .post-container{
+            width: 820px;
             border-right: 1px solid lightgrey;
-            padding-top: 50px;
 
             article{
-                width: 760px;
-                height: 750px;
-                position: relative;
-
-                .entry-content {
-                    a{
-                        .read-more {
-                            color: black;
-                            background-color: #248A83;
-                            padding: 10px;
-                        }
-                    }  
-                }
-            }
-
-            .entry-header{
                 display: flex;
-                position: relative;
+                flex-direction: column;
+                margin-top: 50px;
+                width: 760px;
 
-                img{
+                .entry-header {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
                     width: 760px;
-                    height: 520px;
-                }
+                    height: 500px;
 
-                h2{
-                    position: absolute;
-                    top: 20px;
-                    width: 570px;
-                    background-color: #248A83;
-                    padding: 10px 25px;  
+                    img{
+                        width: 100%;
+                    }
 
-                    a{
-                        color: white;
-                        text-decoration: none;
-                        font-family: "novecentosanswide";
+                    .entry-title{
+                        position: absolute;
+                        width: 570px;
+                        margin: 0;
+                        top: 40px;
+                        left: 0;
+                        background-color: $main-color;
+                        align-items: center;
+                        padding-left: 20px;
+
+
+                        a {
+                            font-size: 35px;
+                            color: white;
+                            text-decoration: none;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            
+                            @include san-serif;
+                        }
+                    }
+                    .entry-meta{
+                        position: absolute;
+                        padding: 8px;
+                        bottom: 0;
+                        right: 0;
+                        background-color: $main-color;
+                        align-items: center;
                         text-transform: uppercase;
-                        font-size: 33px;
-                        letter-spacing: 2px;
-                        line-height: 42px;
-                    }
-                    a:hover {
-                        color: #f0e4d1;
+                        color: white;
+
+                        @include san-serif;
                     }
                 }
+            }
+        }
 
-                .entry-meta{
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    padding: 5px 20px;
-                    background-color: #248a83;
-                    color: white;
-                    font-family: "novecentosanswide";
-                    text-transform: uppercase;
+        .widget-area{
+            width: 300px;
+            padding: 50px 0 0 50px;
+
+            h2{
+                font-family: 'novecentosanswide';
+                text-transform: uppercase;
+                letter-spacing: 2px; 
+            }
+
+            aside{
+                i{
+                    padding-right: 10px;
                 }
             }
         }
     }
+}
 
-
-
-.widget-area{
-    width: 300px;
-    padding: 50px 0 0 50px;
-
-    h2{
-        font-family: 'novecentosanswide';
-        text-transform: uppercase;
-        letter-spacing: 2px; 
+ .entry-content p{
+    line-height: 28px;
     }
 
-    aside{
-        i{
-            padding-right: 10px;
-        }
+.blog .entry-content a {
+    padding: 12px 22px;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include san-serif;
+
+    &:hover {
+        color: white;
+        background-color: $main-color;
+        border: none;
     }
 }

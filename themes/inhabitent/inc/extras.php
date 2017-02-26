@@ -83,7 +83,7 @@ if (!is_page_template('page-templates/about.php')) {
         return;
     }
     
-    $hero_css = ".page-template .site-content {
+    $hero_css = ".page-template .entry-header {
             background:
                 linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
                 url({$image}) no-repeat center bottom;

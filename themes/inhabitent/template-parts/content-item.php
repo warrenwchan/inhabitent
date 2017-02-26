@@ -10,7 +10,7 @@
 <article class="post-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-image">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<a href=""><?php the_post_thumbnail(); ?></a>
+			<a href=" <?php the_permalink();?> "><?php the_post_thumbnail(); ?></a>
 		<?php endif; ?>
 	</div><!-- .entry-header -->
 
