@@ -21,7 +21,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="home-site-header" role="banner">
+			<header id="masthead" class="reverse-header site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
@@ -37,14 +37,13 @@
                         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
                         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                         <span class="search-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
                         </span>
                         <span class="search-input">
                                 <?php get_search_form(); ?>
                         </span>   
                     </div>
                 </nav><!-- #site-navigation -->
-                
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

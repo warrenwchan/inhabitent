@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	<div class="single">
+	<div class="journal">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
@@ -21,13 +21,12 @@ get_header(); ?>
 
 				<div class="post-container">
 					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php
-							get_template_part( 'template-parts/content', 'single' );
-						?>
-					<?php endwhile; ?>
-					<?php the_posts_navigation(); ?>
-					<button type="button" id="close-comments">My Button</button>
+
+						<?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'template-parts/content', 'journal' ); ?>
+							
+						<?php endwhile; ?>
+							<?php the_posts_navigation(); ?>
 					<?php
 						// If comments are open or we have at least one comment, load up the comment template.
 						if ( comments_open() || get_comments_number() ) :
@@ -39,6 +38,7 @@ get_header(); ?>
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>
 					<?php endif; ?>
 				</div>
+
 				<?php get_sidebar(); ?>
 
 			</main><!-- #main -->

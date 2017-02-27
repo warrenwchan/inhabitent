@@ -37,9 +37,4 @@
 		
 
 	</div><!-- .entry-header -->
-
-
-	<!--<div>
-        <a class="readmore" href="<?php the_permalink(); ?>">Read More</a>
-    </div>     -->
 </article><!-- #post-## -->

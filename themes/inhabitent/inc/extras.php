@@ -48,31 +48,7 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
-
-
-// function inhabitent_about_css() {
-
-// 	if (!is_page_template( 'page-templates/about.php' )) {
-// 		return;
-
-// 	}
-// 	$image = CFS()->get('banner_image_upload');
-
-// 	if (!$image) {
-// 		return;
-// 	}
-
-// 	$hero_css = ".page-template-about .entry-header{
-//         background:
-//             linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-//             url({$image}) no-repeat center bottom;
-//         background-size: cover, cover;
-// 		}";
-
-// wp_add_inline_style( 'red-starter-style', $hero_css);
-// }
-
-// add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
+/** About bapper upload */
 
 function inhabitent_about_css() {
 if (!is_page_template('page-templates/about.php')) {
@@ -104,7 +80,7 @@ function product_archive_title($title) {
 }
 add_filter('get_the_archive_title', 'product_archive_title'); 
 
-// ---Change Wear Title function----
+/** Change Wear title function */
 function modify_wear($wear) {
     if(has_term('wear', 'product_type')) {
         $wear = 'Wear';
@@ -112,7 +88,8 @@ function modify_wear($wear) {
     return $wear;
 }
 add_filter('get_the_archive_title', 'modify_wear');
-// --Change eat title function--
+
+/** Change Eat title function */
 function modify_eat($eat) {
     if(has_term('eat', 'product_type')) {
         $eat = 'Eat';
@@ -120,7 +97,8 @@ function modify_eat($eat) {
     return $eat;
 }
 add_filter('get_the_archive_title', 'modify_eat');
-// ----Change do title function---
+
+/** Change Do title function */
 function modify_do($do) {
     if(has_term('do', 'product_type')) {
         $do = 'Do';
@@ -128,7 +106,8 @@ function modify_do($do) {
     return $do;
 }
 add_filter('get_the_archive_title', 'modify_do');
-// --Change sleep title function---
+
+/** Change Sleep title function */
 function modify_sleep($sleep) {
     if(has_term('sleep', 'product_type') && is_tax( 'product_type','sleep')) {
         $sleep = 'Sleep';
@@ -185,10 +164,12 @@ function red_wp_trim_excerpt( $text ) {
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
 
+/** sort post items decending */
+
 function foo_modify_query_order($query) {
     if ( $query->is_main_query() ) {
         $query->set( 'orderby', 'title' );
-        $query->set( 'order', 'ASC' );
+        $query->set( 'order', 'DECS' );
     }
 }
 add_action( 'pre_get_posts', 'foo_modify_query_order' );

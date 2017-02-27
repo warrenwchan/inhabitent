@@ -61,3 +61,12 @@
 	background-size: cover;
     background-position: 50%;
 }
+
+@mixin entry-link {
+	@include san-serif;
+        text-transform: uppercase;
+        margin-right: 10px;
+        a {
+            text-decoration: none;
+        }
+}

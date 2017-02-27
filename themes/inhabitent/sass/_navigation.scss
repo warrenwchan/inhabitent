@@ -25,7 +25,21 @@ a {
 }
 
 /* Menus */
-.home-site-header{
+.site-header{
+	border-bottom: 1px lightgrey solid;
+	height: 50px; 
+	font-family: 'novecentosanswide';
+	font-weight: normal;
+	background: rgba(255, 255, 255, 0.8 );
+	align-items: center;
+	
+	@include fixed-nav;
+	@include center;
+
+}
+
+.reverse-header{
+	border-bottom: none;
 	text-shadow: 1px 1px 2px black;
 	height: 50px; 
 	width: 100%;
@@ -52,18 +66,6 @@ a {
 	a{
 		color: #fff;
 	}
-}
-.site-header{
-	border-bottom: 1px lightgrey solid;
-	height: 50px; 
-	font-family: 'novecentosanswide';
-	font-weight: normal;
-	background: rgba(255, 255, 255, 0.8 );
-	align-items: center;
-	
-	@include fixed-nav;
-	@include center;
-
 }
 
 .search-icon{
