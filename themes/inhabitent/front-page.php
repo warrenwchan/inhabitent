@@ -49,8 +49,8 @@
 					<div class="journal-feature-item" >
 						<?php the_post_thumbnail( 'medium' ); ?>
 						<div class="journal-feature-text" >
-							<span class="comments"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
-							<span class="title"><?php the_title(); ?>  </span> 
+							<div class="comments"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></div>
+							<div class="title"><?php the_title(); ?>  </div> 
 							<a href="<?php the_permalink();?>" class="readmore">read entry</a>
 						</div>
 					</div>
@@ -60,17 +60,28 @@
 		<section class="contain">
 			<h2>latest adventure</h2>
 			<div class="adventure-container">
-				 <div class="wrap1" ><!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/canoe-girl.jpg" alt="canoe-girl" />-->
+				 <div class="wrap1" >
+				 	<h3>Getting Back to Nature in a Canoe</h2>
+					 <a href="<?php the_permalink();?>" class="readmore">read more</a>
 				 </div>
 				 <div class="contain-wrap">
-					<div class="wrap2"><!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/beach-bonfire.jpg" alt="beach-bonfire" />-->
+					<div class="wrap2">
+						<h4>A Night with Friends at the Beach</h2>
+						<a href="<?php the_permalink();?>" class="readmore">read more</a>
 					</div>
-					<div class="wrap3"><!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/mountain-hikers.jpg" alt="mountain-hikers" />-->
+					<div class="wrap3">
+						<p>Taking in the View at Big Mountain</p>
+						<a href="<?php the_permalink();?>" class="readmore">read more</a>
 					</div>
-					<div class="wrap4"><!--<img src="<?php echo get_template_directory_uri(); ?>/images/adventure-photos/night-sky.jpg" alt="night-sky" />-->
+					<div class="wrap4">
+						<p>Star-Gazing at the Night Sky</p>
+						<a href="<?php the_permalink();?>" class="readmore">read more</a>
 					</div>
 				 </div>
 			</div>
+			 <div class="more-adventure">
+				 <a href="<?php the_permalink();?>" class="readmore">more adventures</a>
+			 </div>
 		</sectioin>
 		<?php get_footer(); ?>
 	</main> <!-- #main -->

@@ -32,6 +32,13 @@ a {
 	font-weight: normal;
 	background: rgba(255, 255, 255, 0.8 );
 	align-items: center;
+
+
+	.home-logo {
+		padding: 17px 25px;
+		background-size: cover, cover;
+		background-image: url('../../images/logos/inhabitent-logo-tent.svg');
+	}
 	
 	@include fixed-nav;
 	@include center;
@@ -51,6 +58,12 @@ a {
     position: absolute;
 	
 	@include center;
+
+	.home-logo {
+		padding: 17px 25px;
+		background-size: cover, cover;
+		background-image: url('../../images/logos/inhabitent-logo-tent-white.svg');
+	}
 
 	.search-icon{
 		align-content: center;
@@ -163,6 +176,7 @@ a {
 
 		&:hover > a,
 		&.focus > a {
+			color: #f0e4d1;
 		}
 	}
 	a {

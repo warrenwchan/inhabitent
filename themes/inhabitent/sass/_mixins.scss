@@ -33,19 +33,19 @@
 }
 
 @mixin button {
-	width: 140px;
-    height: 40px;
-    background: none;
-    border: 1px solid;
+	
+	padding: 10px 20px;
 	color: black;
+    background: none;
+    border: 1px solid black;
     text-transform: uppercase;
 	align-items: center;
 	text-decoration: none;
-	@include center;
     @include san-serif;
 
     &:hover {
         background: #248A83;
+		border: none;
         color: white;
 		text-decoration:none; 
      	cursor:pointer;  

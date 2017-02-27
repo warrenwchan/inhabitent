@@ -18,6 +18,10 @@
     }
 }
 
+.readmore{
+     @include button;
+}
+
 .entry-links{
     margin-bottom: 20px;
     .cat-links {

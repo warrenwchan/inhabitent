@@ -76,7 +76,7 @@
                         @include san-serif;
 
                         &:hover{
-                            background-color: #19625d
+                            background-color: #19625d;
                         }
                     }
                 }
@@ -101,9 +101,6 @@
 
                 .journal-feature-text{
                     padding: 10px;
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: column;
                     height: 150px;
 
                     .comments {
@@ -118,6 +115,7 @@
                         font-weight: bold;
                         font-size: 1.4rem;
                         line-height: 1.2;   
+                        margin-bottom: 20px;
                     }
 
                     .readmore{
@@ -131,12 +129,41 @@
             width: 100%;
             height: 560px;
             display: flex;
-            margin: 40px 0;
+            margin: 20px 0;
+
+            h3 {
+                @include serif;
+                color: white;
+                font-size: 50px;
+                font-weight: normal;
+                margin: 35px 0;
+            }
+
+            h4 {
+                @include serif;
+                color: white;
+                font-size: 40px;
+                font-weight: normal;
+                margin: 35px 0;
+            }
+
+            p{
+                @include serif;
+                color: white;
+                font-size: 25px;
+                font-weight: normal;
+            }
             
+            .readmore {
+                @include button;
+                border: 1px solid white;
+                color: white;
+            }
+
             .wrap1{
                 width: 50%;
-                background-color: red;
-                background-image: url('../../images/adventure-photos/canoe-girl.jpg');
+                padding: 0 20px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/adventure-photos/canoe-girl.jpg');
                 @include background-center;
                 @include box-border;
             }
@@ -150,7 +177,8 @@
             .wrap2{
                 width: 100%;
                 height: 50%;
-                background-image: url('../../images/adventure-photos/beach-bonfire.jpg');
+                padding: 0 20px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/adventure-photos/beach-bonfire.jpg');
                 @include background-center;
                 @include box-border;
             }
@@ -158,7 +186,8 @@
             .wrap3{
                 width: 50%;
                 height: 50%;
-                background-image: url('../../images/adventure-photos/mountain-hikers.jpg');
+                padding: 0 20px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/adventure-photos/mountain-hikers.jpg');
                 @include background-center;
                 @include box-border;
             }
@@ -166,9 +195,23 @@
             .wrap4{
                 width: 50%;
                 height: 50%;
-                background-image: url('../../images/adventure-photos/night-sky.jpg');
+                padding: 0 20px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../images/adventure-photos/night-sky.jpg');
                 @include background-center;
                 @include box-border;
             }
         }
+        .more-adventure {
+
+           margin: 30px 0;
+           .readmore{
+               background-color: $main-color;
+               color: white;
+               border: none;
+
+               &:hover {
+                    background-color:#19625d;
+               }
+           }
+       }
     }

@@ -30,7 +30,7 @@
                 <nav id="site-navigation" class="main-navigation" role="navigation">
                     <div class="logo" >
                         <a href="<?php echo get_home_url(); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="Image of Inhabitent logo" />
+							<div class="home-logo"> </div>
                         </a>
                     </div>
                     <div class="site-nav">

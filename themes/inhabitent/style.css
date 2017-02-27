@@ -452,6 +452,10 @@ a {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .site-header .home-logo {
+    padding: 17px 25px;
+    background-size: cover, cover;
+    background-image: url("../../images/logos/inhabitent-logo-tent.svg"); }
 
 .reverse-header {
   border-bottom: none;
@@ -469,6 +473,10 @@ a {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .reverse-header .home-logo {
+    padding: 17px 25px;
+    background-size: cover, cover;
+    background-image: url("../../images/logos/inhabitent-logo-tent-white.svg"); }
   .reverse-header .search-icon {
     -ms-flex-line-pack: center;
         align-content: center;
@@ -546,6 +554,9 @@ a {
     position: relative;
     padding-left: 20px;
     text-transform: uppercase; }
+    .main-navigation li:hover > a,
+    .main-navigation li.focus > a {
+      color: #f0e4d1; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -877,12 +888,6 @@ section {
         margin-bottom: 10px; }
       section .journal-feature .journal-feature-item .journal-feature-text {
         padding: 10px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        -ms-flex-direction: column;
-            flex-direction: column;
         height: 150px; }
         section .journal-feature .journal-feature-item .journal-feature-text .comments {
           font-size: 0.8rem; }
@@ -893,24 +898,21 @@ section {
           letter-spacing: 1.5px;
           font-weight: bold;
           font-size: 1.4rem;
-          line-height: 1.2; }
+          line-height: 1.2;
+          margin-bottom: 20px; }
         section .journal-feature .journal-feature-item .journal-feature-text .readmore {
-          width: 140px;
-          height: 40px;
-          background: none;
-          border: 1px solid;
+          padding: 10px 20px;
           color: black;
+          background: none;
+          border: 1px solid black;
           text-transform: uppercase;
           -ms-flex-align: center;
               align-items: center;
           text-decoration: none;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
           font-family: 'novecentosanswide'; }
           section .journal-feature .journal-feature-item .journal-feature-text .readmore:hover {
             background: #248A83;
+            border: none;
             color: white;
             text-decoration: none;
             cursor: pointer; }
@@ -919,11 +921,46 @@ section {
     height: 560px;
     display: -ms-flexbox;
     display: flex;
-    margin: 40px 0; }
+    margin: 20px 0; }
+    section .adventure-container h3 {
+      font-family: 'merriweather';
+      color: white;
+      font-size: 50px;
+      font-weight: normal;
+      margin: 35px 0; }
+    section .adventure-container h4 {
+      font-family: 'merriweather';
+      color: white;
+      font-size: 40px;
+      font-weight: normal;
+      margin: 35px 0; }
+    section .adventure-container p {
+      font-family: 'merriweather';
+      color: white;
+      font-size: 25px;
+      font-weight: normal; }
+    section .adventure-container .readmore {
+      padding: 10px 20px;
+      color: black;
+      background: none;
+      border: 1px solid black;
+      text-transform: uppercase;
+      -ms-flex-align: center;
+          align-items: center;
+      text-decoration: none;
+      font-family: 'novecentosanswide';
+      border: 1px solid white;
+      color: white; }
+      section .adventure-container .readmore:hover {
+        background: #248A83;
+        border: none;
+        color: white;
+        text-decoration: none;
+        cursor: pointer; }
     section .adventure-container .wrap1 {
       width: 50%;
-      background-color: red;
-      background-image: url("../../images/adventure-photos/canoe-girl.jpg");
+      padding: 0 20px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg");
       background-size: cover;
       background-position: 50%;
       box-sizing: border-box;
@@ -937,7 +974,8 @@ section {
     section .adventure-container .wrap2 {
       width: 100%;
       height: 50%;
-      background-image: url("../../images/adventure-photos/beach-bonfire.jpg");
+      padding: 0 20px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/beach-bonfire.jpg");
       background-size: cover;
       background-position: 50%;
       box-sizing: border-box;
@@ -945,7 +983,8 @@ section {
     section .adventure-container .wrap3 {
       width: 50%;
       height: 50%;
-      background-image: url("../../images/adventure-photos/mountain-hikers.jpg");
+      padding: 0 20px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/mountain-hikers.jpg");
       background-size: cover;
       background-position: 50%;
       box-sizing: border-box;
@@ -953,11 +992,20 @@ section {
     section .adventure-container .wrap4 {
       width: 50%;
       height: 50%;
-      background-image: url("../../images/adventure-photos/night-sky.jpg");
+      padding: 0 20px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/night-sky.jpg");
       background-size: cover;
       background-position: 50%;
       box-sizing: border-box;
       border: 10px solid white; }
+  section .more-adventure {
+    margin: 30px 0; }
+    section .more-adventure .readmore {
+      background-color: #248A83;
+      color: white;
+      border: none; }
+      section .more-adventure .readmore:hover {
+        background-color: #19625d; }
 
 /* Shop */
 .shop .page-header {
@@ -1181,25 +1229,38 @@ section {
   display: flex; }
   .social-links .social-button {
     margin-right: 10px;
-    width: 140px;
-    height: 40px;
-    background: none;
-    border: 1px solid;
+    padding: 10px 20px;
     color: black;
+    background: none;
+    border: 1px solid black;
     text-transform: uppercase;
     -ms-flex-align: center;
         align-items: center;
     text-decoration: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
     font-family: 'novecentosanswide'; }
     .social-links .social-button:hover {
       background: #248A83;
+      border: none;
       color: white;
       text-decoration: none;
       cursor: pointer; }
+
+.readmore {
+  padding: 10px 20px;
+  color: black;
+  background: none;
+  border: 1px solid black;
+  text-transform: uppercase;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  font-family: 'novecentosanswide'; }
+  .readmore:hover {
+    background: #248A83;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
 
 .entry-links {
   margin-bottom: 20px; }
