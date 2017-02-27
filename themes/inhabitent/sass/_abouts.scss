@@ -33,10 +33,13 @@
             @include san-serif;
             font-weight: bold;
             letter-spacing: 2px;
-            font-size: 35px;
+            font-size: 33px;
             color: #2f1339;
             margin: 30px 0;
+        }
 
+        p{
+            line-height: 30px;
         }
     }
 }

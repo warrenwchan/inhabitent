@@ -799,9 +799,11 @@ object {
       font-family: 'novecentosanswide';
       font-weight: bold;
       letter-spacing: 2px;
-      font-size: 35px;
+      font-size: 33px;
       color: #2f1339;
       margin: 30px 0; }
+    .site-content .about-entry p {
+      line-height: 30px; }
 
 .home .site-content {
   height: 100vh;
@@ -880,7 +882,7 @@ section {
         justify-content: space-between; }
     section .journal-feature .journal-feature-item {
       width: 358px;
-      border: 1px solid lightgrey; }
+      border: 1px solid #e1e1e1; }
       section .journal-feature .journal-feature-item img {
         width: 100%;
         object-fit: cover;
@@ -1050,7 +1052,7 @@ section {
   .shop .shop-contain .post-item {
     width: 255px;
     margin-bottom: 20px;
-    border: 1px solid lightgrey; }
+    border: 1px solid #e1e1e1; }
     .shop .shop-contain .post-item .entry-image {
       width: 255px;
       height: 255px;
@@ -1195,7 +1197,7 @@ section {
 .entry-content p {
   line-height: 28px; }
 
-.blog .entry-content a {
+.entry-content a {
   padding: 12px 22px;
   font-size: 0.9rem;
   border: 1px solid black;
@@ -1203,10 +1205,18 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'novecentosanswide'; }
-  .blog .entry-content a:hover {
+  .entry-content a:hover {
     color: white;
     background-color: #248A83;
     border: none; }
+
+.page-title {
+  width: 760px;
+  font-family: 'novecentosanswide';
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 30px 0;
+  border-bottom: 1px solid lightgrey; }
 
 .site-content {
   display: -ms-flexbox;
@@ -1287,7 +1297,7 @@ section {
     letter-spacing: 2px; }
   .comments-area #comment {
     background-color: #F4F4F4;
-    border: 1px solid lightgrey; }
+    border: 1px solid #e1e1e1; }
 
 /*Single product*/
 .single-product .content-area {
@@ -1322,3 +1332,74 @@ section {
         width: 540px;
         height: 400px;
         overflow: hidden; }
+
+/** find us*/
+.find-us .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  margin-top: 50px; }
+  .find-us .site-main .post-container {
+    width: 820px;
+    border-right: 1px solid lightgrey; }
+    .find-us .site-main .post-container article {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      margin-top: 50px;
+      width: 760px; }
+      .find-us .site-main .post-container article .entry-title {
+        font-size: 38px;
+        width: 570px;
+        margin: 0;
+        color: #404040;
+        height: 50px;
+        font-family: 'novecentosanswide';
+        text-transform: uppercase; }
+      .find-us .site-main .post-container article .entry-meta {
+        position: absolute;
+        padding: 8px;
+        bottom: 0;
+        right: 0;
+        background-color: #248A83;
+        -ms-flex-align: center;
+            align-items: center;
+        text-transform: uppercase;
+        color: white;
+        font-family: 'novecentosanswide'; }
+    .find-us .site-main .post-container h2 {
+      font-size: 40px; }
+  .find-us .site-main .widget-area {
+    width: 300px;
+    padding: 50px 0 0 50px; }
+    .find-us .site-main .widget-area h2 {
+      font-family: 'novecentosanswide';
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .find-us .site-main .widget-area aside i {
+      padding-right: 10px; }
+
+.entry-content p {
+  line-height: 28px; }
+
+.entry-content a {
+  padding: 12px 22px;
+  font-size: 0.9rem;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'novecentosanswide'; }
+  .entry-content a:hover {
+    color: white;
+    background-color: #248A83;
+    border: none; }
+
+.page-title {
+  width: 760px;
+  font-family: 'novecentosanswide';
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 30px 0;
+  border-bottom: 1px solid lightgrey; }

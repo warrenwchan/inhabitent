@@ -86,7 +86,7 @@
     line-height: 28px;
     }
 
-.blog .entry-content a {
+.entry-content a {
     padding: 12px 22px;
     font-size: 0.9rem;
     border: 1px solid black;
@@ -100,4 +100,13 @@
         background-color: $main-color;
         border: none;
     }
+}
+
+.page-title {
+    width: 760px;
+    @include san-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid lightgrey;
 }
