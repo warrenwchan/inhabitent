@@ -10,6 +10,8 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
+				<a href="" class="readmore"><i class="fa fa-twitter" aria-hidden="true"></i> like</a>
+
 			<?php if ( have_posts() ) : ?>
 
 				<div class="post-container">

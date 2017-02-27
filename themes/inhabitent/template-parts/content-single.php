@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<div class="entry-header">
 		<div class="entry-image">
 			<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail( 'large' ); ?>
@@ -25,11 +25,13 @@
 			<?php endif; ?>
 
 			<div class="entry-content">
-				<?php the_excerpt(); ?>
+				<?php echo CFS()->get( 'product_price' ); ?>
+				<?php the_content(); ?>
+				<?php get_the_tags(); ?>
 			</div><!-- .entry-content -->
 		</div>
 
-	</header><!-- .entry-header -->
+	</div><!-- .entry-header -->
 
 
 	<!--<div>

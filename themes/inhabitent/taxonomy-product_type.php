@@ -24,14 +24,6 @@ get_header(); ?>
                     $terms = get_terms( $arg );
                 ?>
 
-                <div class="product-list-style">
-                    <ul>
-                        <?php foreach ( $terms as $term ) : ?>
-                            <span><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></span>
-                        <?php endforeach; ?>
-                    </ul>
-                    <?php the_archive_description( '<div e="taxonomy-description">', '</div>' ); ?>
-                </div><!-- .product-list-style -->
             </header><!-- .page-header --> 
 		</section>
 		<section class="contain">

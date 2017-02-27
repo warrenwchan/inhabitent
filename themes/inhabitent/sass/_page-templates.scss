@@ -15,6 +15,10 @@
         justify-content: center;
         margin: 50px 0;
 
+        .taxonomy-description{
+            text-align: center;
+        }
+
         h1 {
             text-align: center;
             margin: 0;
@@ -83,28 +87,47 @@
     }
 }
 
+
+
 /*Single product*/
 
 .single{
+    .content-area {
+        margin-top: 50px;
+        @include center;
+    }
     .post-container{
         width: 1120px;
-        display: flex;
-        justify-content: space-between;
+        height: 666px;
+        padding: 100px 0;
+
 
         article{
+            width: 100%;
+            height: 400px;
+
+
             .entry-header {
-                .entry-title {
-                    a{
-                        color: #d99054;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .entry-info{
+                    width: 500px;
+
+                    .entry-title{
+                        margin: 0;
+                        a{
+                            color: #d99054;
+                            text-decoration: none;
+                            font-size: 40px;
+                        }
                     }
                 }
-
                 .entry-image {
-                        max-width: none;
-
-                    img{
-                        
-                    }
+                    width: 540px;
+                    height: 400px;
+                    overflow: hidden;
                 }
             }
         }

@@ -629,7 +629,7 @@ a {
   margin-right: auto; }
 
 .contain {
-  max-width: 1120px; }
+  width: 1120px; }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -698,9 +698,6 @@ a {
 
 .bypostauthor {
   display: block; }
-
-.single {
-  height: 100%; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1020,73 +1017,67 @@ section {
       margin: 0;
       font-family: 'novecentosanswide'; }
 
-.journal .content-area {
-  margin-top: 50px;
+.journal .site-main {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .journal .content-area .site-main {
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 1120px; }
-    .journal .content-area .site-main .post-container {
-      width: 820px;
-      border-right: 1px solid lightgrey; }
-      .journal .content-area .site-main .post-container article {
+  max-width: 1120px; }
+  .journal .site-main .post-container {
+    width: 820px;
+    border-right: 1px solid lightgrey; }
+    .journal .site-main .post-container article {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      margin-top: 50px;
+      width: 760px; }
+      .journal .site-main .post-container article .entry-header {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
             flex-direction: column;
-        margin-top: 50px;
-        width: 760px; }
-        .journal .content-area .site-main .post-container article .entry-header {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-direction: column;
-              flex-direction: column;
-          position: relative;
-          width: 760px;
-          height: 500px; }
-          .journal .content-area .site-main .post-container article .entry-header img {
-            width: 100%; }
-          .journal .content-area .site-main .post-container article .entry-header .entry-title {
-            position: absolute;
-            width: 570px;
-            margin: 0;
-            top: 40px;
-            left: 0;
-            background-color: #248A83;
-            -ms-flex-align: center;
-                align-items: center;
-            padding-left: 20px; }
-            .journal .content-area .site-main .post-container article .entry-header .entry-title a {
-              font-size: 35px;
-              color: white;
-              text-decoration: none;
-              font-weight: bold;
-              letter-spacing: 2px;
-              font-family: 'novecentosanswide'; }
-          .journal .content-area .site-main .post-container article .entry-header .entry-meta {
-            position: absolute;
-            padding: 8px;
-            bottom: 0;
-            right: 0;
-            background-color: #248A83;
-            -ms-flex-align: center;
-                align-items: center;
-            text-transform: uppercase;
+        position: relative;
+        width: 760px;
+        height: 500px; }
+        .journal .site-main .post-container article .entry-header img {
+          width: 100%; }
+        .journal .site-main .post-container article .entry-header .entry-title {
+          position: absolute;
+          width: 570px;
+          margin: 0;
+          top: 40px;
+          left: 0;
+          background-color: #248A83;
+          -ms-flex-align: center;
+              align-items: center;
+          padding-left: 20px; }
+          .journal .site-main .post-container article .entry-header .entry-title a {
+            font-size: 35px;
             color: white;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
             font-family: 'novecentosanswide'; }
-    .journal .content-area .site-main .widget-area {
-      width: 300px;
-      padding: 50px 0 0 50px; }
-      .journal .content-area .site-main .widget-area h2 {
-        font-family: 'novecentosanswide';
-        text-transform: uppercase;
-        letter-spacing: 2px; }
-      .journal .content-area .site-main .widget-area aside i {
-        padding-right: 10px; }
+        .journal .site-main .post-container article .entry-header .entry-meta {
+          position: absolute;
+          padding: 8px;
+          bottom: 0;
+          right: 0;
+          background-color: #248A83;
+          -ms-flex-align: center;
+              align-items: center;
+          text-transform: uppercase;
+          color: white;
+          font-family: 'novecentosanswide'; }
+  .journal .site-main .widget-area {
+    width: 300px;
+    padding: 50px 0 0 50px; }
+    .journal .site-main .widget-area h2 {
+      font-family: 'novecentosanswide';
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .journal .site-main .widget-area aside i {
+      padding-right: 10px; }
 
 .entry-content p {
   line-height: 28px; }
@@ -1124,6 +1115,8 @@ section {
   -ms-flex-pack: center;
       justify-content: center;
   margin: 50px 0; }
+  .shop .page-header .taxonomy-description {
+    text-align: center; }
   .shop .page-header h1 {
     text-align: center;
     margin: 0;
@@ -1181,13 +1174,35 @@ section {
         text-decoration: none; }
 
 /*Single product*/
-.single .post-container {
-  width: 1120px;
+.single .content-area {
+  margin-top: 50px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .single .post-container .entry-header .entry-title a {
-    color: #d99054; }
-  .single .post-container .entry-header .entry-image {
-    width: 500px; }
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.single .post-container {
+  width: 1120px;
+  height: 666px;
+  padding: 100px 0; }
+  .single .post-container article {
+    width: 100%;
+    height: 400px; }
+    .single .post-container article .entry-header {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .single .post-container article .entry-header .entry-info {
+        width: 500px; }
+        .single .post-container article .entry-header .entry-info .entry-title {
+          margin: 0; }
+          .single .post-container article .entry-header .entry-info .entry-title a {
+            color: #d99054;
+            text-decoration: none;
+            font-size: 40px; }
+      .single .post-container article .entry-header .entry-image {
+        width: 540px;
+        height: 400px;
+        overflow: hidden; }

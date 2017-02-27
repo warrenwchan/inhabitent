@@ -28,7 +28,7 @@
                         <li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="Product icon image of <?php echo $term->slug;?> ">
 							<p><?php echo $term->description; ?></p>
-							<a href="<?php echo $url ?>"><?php echo $term->name; ?></a>
+							<a href="<?php echo $url ?>"><?php echo $term->name; ?> stuff</a>
 						</li>
                     <?php endforeach; ?>
                 </ul>
@@ -51,7 +51,7 @@
 						<div class="journal-feature-text" >
 							<span class="comments"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
 							<span class="title"><?php the_title(); ?>  </span> 
-							<a href="'.get_term_link($term).'" class="readmore">read entry</a>
+							<a href="<?php the_permalink();?>" class="readmore">read entry</a>
 						</div>
 					</div>
 				<?php endforeach; wp_reset_postdata(); ?>
