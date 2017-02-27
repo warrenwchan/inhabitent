@@ -6,11 +6,9 @@
  */
 
 get_header(); ?>
-	<div class="single">
+	<div class="single-product">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
-
-				<a href="" class="readmore"><i class="fa fa-twitter" aria-hidden="true"></i> like</a>
 
 			<?php if ( have_posts() ) : ?>
 

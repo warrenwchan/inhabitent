@@ -91,7 +91,7 @@
 
 /*Single product*/
 
-.single{
+.single-product{
     .content-area {
         margin-top: 50px;
         @include center;
@@ -122,6 +122,16 @@
                             text-decoration: none;
                             font-size: 40px;
                         }
+                    }
+
+                    .social-button{
+                        @include button;
+                        margin-right: 10px;
+                    }
+
+                    .social-links {
+                        display: flex;
+                        flex-direction: row;
                     }
                 }
                 .entry-image {

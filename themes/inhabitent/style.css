@@ -1174,35 +1174,61 @@ section {
         text-decoration: none; }
 
 /*Single product*/
-.single .content-area {
+.single-product .content-area {
   margin-top: 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
 
-.single .post-container {
+.single-product .post-container {
   width: 1120px;
   height: 666px;
   padding: 100px 0; }
-  .single .post-container article {
+  .single-product .post-container article {
     width: 100%;
     height: 400px; }
-    .single .post-container article .entry-header {
+    .single-product .post-container article .entry-header {
       height: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-      .single .post-container article .entry-header .entry-info {
+      .single-product .post-container article .entry-header .entry-info {
         width: 500px; }
-        .single .post-container article .entry-header .entry-info .entry-title {
+        .single-product .post-container article .entry-header .entry-info .entry-title {
           margin: 0; }
-          .single .post-container article .entry-header .entry-info .entry-title a {
+          .single-product .post-container article .entry-header .entry-info .entry-title a {
             color: #d99054;
             text-decoration: none;
             font-size: 40px; }
-      .single .post-container article .entry-header .entry-image {
+        .single-product .post-container article .entry-header .entry-info .social-button {
+          width: 140px;
+          height: 40px;
+          background: none;
+          border: 1px solid;
+          color: black;
+          text-transform: uppercase;
+          -ms-flex-align: center;
+              align-items: center;
+          text-decoration: none;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          font-family: 'novecentosanswide';
+          margin-right: 10px; }
+          .single-product .post-container article .entry-header .entry-info .social-button:hover {
+            background: #248A83;
+            color: white;
+            text-decoration: none;
+            cursor: pointer; }
+        .single-product .post-container article .entry-header .entry-info .social-links {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .single-product .post-container article .entry-header .entry-image {
         width: 540px;
         height: 400px;
         overflow: hidden; }

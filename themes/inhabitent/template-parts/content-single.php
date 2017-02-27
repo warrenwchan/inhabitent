@@ -16,8 +16,8 @@
 		</div>
 		<div class="entry-info">
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
 			<?php if ( 'post' === get_post_type() ) : ?>
+
 			<div class="entry-meta">
 				<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 			</div><!-- .entry-meta -->
@@ -27,9 +27,14 @@
 			<div class="entry-content">
 				<?php echo CFS()->get( 'product_price' ); ?>
 				<?php the_content(); ?>
-				<?php get_the_tags(); ?>
 			</div><!-- .entry-content -->
+			<div class="social-links">
+				<a href="" class="social-button"><i class="fa fa-facebook" aria-hidden="true"></i> like</a>
+				<a href="" class="social-button"><i class="fa fa-twitter" aria-hidden="true"></i> tweet</a>
+				<a href="" class="social-button"><i class="fa fa-pinterest" aria-hidden="true"></i> pin</a>
+			</div>
 		</div>
+		
 
 	</div><!-- .entry-header -->
 
