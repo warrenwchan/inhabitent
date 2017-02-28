@@ -48,7 +48,7 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
-/** About bapper upload */
+/** About Banner Upload */
 
 function inhabitent_about_css() {
 if (!is_page_template('page-templates/about.php')) {
