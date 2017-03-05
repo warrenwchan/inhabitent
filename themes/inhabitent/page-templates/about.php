@@ -15,12 +15,14 @@ get_header('home'); ?>
 				</header><!-- .entry-header -->
 			</section>
 
-			<section class="about-entry">
-				<h2>Our story</h2>
-				<?php echo CFS()->get( 'about_our_story' ); ?>
-				
-				<h2>Our Team</h2>
-				<?php echo CFS()->get( 'about_our_team' ); ?>
+			<section class="about-contain">
+				<div class="about-entry">
+					<h2>Our story</h2>
+					<?php echo CFS()->get( 'about_our_story' ); ?>
+					
+					<h2>Our Team</h2>
+					<?php echo CFS()->get( 'about_our_team' ); ?>
+				</div>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -12,3 +12,15 @@
         })
 })
 (jQuery);
+
+(function( $ ) {
+   $('.search-submit').on('click', function(event) {
+       event.preventDefault();
+       $('.search-field').animate( { width: 'toggle' }, 500 );
+   });
+
+  $('.search-submit').on('blur', function() {
+       $('.search-field').animate( { width: 'toggle' }, 500 );
+   });
+console.log('hello');
+})( jQuery );

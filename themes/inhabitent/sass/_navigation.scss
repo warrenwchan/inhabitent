@@ -90,10 +90,23 @@ a {
 
 .search-input{
 	padding-left: 20px;
+
+	button {
+		background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+		color: white;
+	}
 }
 
 .search-field{
 	font-family: "novecentosanswide";
+}
+
+.main-navigation {
+	#search-field{
+		display: none;
+	}
 }
 
 .site-nav{
@@ -180,7 +193,7 @@ a {
 		}
 	}
 	a {
-		display: block;
+		display: inline;
 		text-decoration: none;
 	}
 

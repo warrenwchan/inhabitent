@@ -6,14 +6,15 @@
  */
 
 ?>
+<?php get_header('home'); ?>
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<section>
-			<div class="hero" >
-				<?php get_header('home'); ?>
+		<div class="hero">
+			<div class="hero-container">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Full image of Inhabitent logo" />
 			</div>
-		</section>
+		</div>
 
 		<section class="contain" >
 			<h2>Shop Stuff</h2>

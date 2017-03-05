@@ -1,10 +1,15 @@
 
 
-.site-content {
+.page-template-about .site-content {
     padding: 0;
 
     .content-area {
         width: 100%;
+    }
+
+    .about-contain {
+        width: 100vw;
+        @include center;
     }
 
     .entry-header{

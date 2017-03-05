@@ -1,109 +1,15 @@
+.error {
 
-.site-content {
-    @include center;
-    padding: 0;
-}
-
-.page-header {
-    flex-direction: column;
-    @include center;
-}
-
-.social-links {
-    width: 100%;
-    display: flex;
-    .social-button {
-        margin-right: 10px;
-        @include button;
-    }
-}
-
-.readmore{
-     @include button;
-}
-
-.entry-links{
-    margin-bottom: 20px;
-    .cat-links {
-        @include entry-link;
-    }
-    .tags-links {
-        @include entry-link;
-    }
-}
-
-.comments-area {
-    width: 760px;
-    border-top: 1px solid lightgrey;
-
-    h3 {
-        font-size: 28px;
-        @include san-serif;
+    h2{
+        font-family: 'novecentosanswide';
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 2px; 
     }
-
-    #comment{
-        background-color: #F4F4F4;
-        border: 1px solid #e1e1e1;
-    }
-}
-
-
-
-/*Single product*/
-
-.single-product{
-    .content-area {
-        margin-top: 50px;
-        @include center;
-    }
-    .post-container{
-        width: 1120px;
-        height: 666px;
-        padding: 100px 0;
-
-
-        article{
-            width: 100%;
-            height: 400px;
-
-
-            .entry-header {
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-
-                .entry-info{
-                    width: 500px;
-
-                    .entry-title{
-                        margin: 0;
-                        a{
-                            color: #d99054;
-                            text-decoration: none;
-                            font-size: 40px;
-                        }
-                    }
-                }
-                .entry-image {
-                    width: 540px;
-                    height: 400px;
-                    overflow: hidden;
-                }
-            }
-        }
-    }
-}
-
-/** find us*/
-
-.find-us {
-
     .site-main {
         display: flex;
         max-width: 1120px;
         margin-top: 50px;
+        
 
         .post-container{
             width: 820px;
@@ -139,13 +45,14 @@
             }
 
             h2 {
-                font-size: 40px;
+                font-size: 20px;
             }
         }
 
         .widget-area{
             width: 300px;
             padding: 50px 0 0 50px;
+            border-left: 1px solid lightgrey;
 
             h2{
                 font-family: 'novecentosanswide';
@@ -160,8 +67,8 @@
             }
         }
     }
-    .entry-content p{
-        line-height: 28px;
+     .entry-content p{
+    line-height: 28px;
         }
 
     .entry-content a {

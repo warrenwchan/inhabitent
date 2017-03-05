@@ -1,24 +1,31 @@
 .site-footer{
     height: 350px;
-    padding: 25px 0;
+    padding: 65px 0;
     background-image: url('../../images/dark-wood.png');
 
-    @include center;
+.site-info{
+    width: 1140px;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    display: flex;
+    height: 260px;
+    margin: 0 auto;
+}
 
-    .site-info{
-        width: 1140px;
-        padding: 40px 0;
-        justify-content: space-between;
-        align-content: center;
-        position: relative;
-        display: flex;
+.hero{
+    height: 300px;
+    .hero-container{
+
+    }
+}
 
         .info-hour{
-            display: flex;
             width: 520px;
             justify-content: space-between;
             color: white;
             line-height: 1.5rem;
+            display: flex;
 
             span{
                 font-weight: bold;
@@ -67,9 +74,8 @@
             position: absolute;
             bottom: 0;
             text-transform: uppercase;
-            margin: 0;
+            margin: 0;flex-direction: column;
 
             @include san-serif;
         }
-    }
 }
