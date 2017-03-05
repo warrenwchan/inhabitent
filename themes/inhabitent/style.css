@@ -1042,10 +1042,14 @@ object {
     padding-top: 50px;
     font-family: 'novecentosanswide'; }
   .shop .page-header ul {
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     text-transform: uppercase;
     width: 320px;
+    padding: 0;
+    margin: 0;
     font-size: 18px;
     font-family: 'novecentosanswide'; }
     .shop .page-header ul a {
@@ -1288,10 +1292,10 @@ object {
     .journal .site-main .widget-area aside i {
       padding-right: 10px; }
 
-.entry-content p {
+.journal .entry-content p {
   line-height: 28px; }
 
-.entry-content a {
+.journal .entry-content a {
   padding: 12px 22px;
   font-size: 0.9rem;
   border: 1px solid black;
@@ -1299,12 +1303,12 @@ object {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'novecentosanswide'; }
-  .entry-content a:hover {
+  .journal .entry-content a:hover {
     color: white;
     background-color: #248A83;
     border: none; }
 
-.page-title {
+.journal .page-title {
   width: 760px;
   font-family: 'novecentosanswide';
   text-transform: uppercase;
