@@ -42,6 +42,9 @@ In each journal entry, we only want to display a spesific word count so we can a
 The about page hero image had to be able to be changed by the user. In the wordpress admin page we downloaded a tool called  Custom Field Suite. This enabled us to make custom field groups. For the abouts page we made field groups consist of a banner image and 2 input fields for story and teams. CFS()->get() is added in out about.php this gets the data that the user put in the custom field group then adds it in the php file.
 
 ### WIDGET BAR 
+
+<img width="370" alt="screen shot 2017-03-05 at 4 30 39 pm" src="https://cloud.githubusercontent.com/assets/24995518/23593242/1d840044-01c1-11e7-91da-a2b68504438d.png">
+
 We created a custom widget for our business hour and contact information. We were provided a red widget boiler plate and in there we added the appropriate fields and enabled the widget in the admin homepage under plug ins.
 
 ## STRUGGLES
