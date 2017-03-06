@@ -37,4 +37,7 @@ For the post we wrote a have post statment saying if there is a post we require 
 
 In each journal entry, we only want to display a spesific word count so we can apply a function to it snipping the exerpt to a spesific work count. In our case we used 50. in the same function we gave the post a link that redirects us to the single.php which contains the indivisual blog post. the single.php is just a template for the post that is selected. No matter what the content is the template will still be structuered to be the same. This is us dynimically placing content into our tempates. 
 
+### ABOUTS abouts.php
+![screen shot 2017-03-05 at 4 04 05 pm-min](https://cloud.githubusercontent.com/assets/24995518/23592991/ba037a66-01bd-11e7-87a6-84e4dda0788c.png)
+The about page hero image had to be able to be changed by the user. In the wordpress admin page we downloaded a tool called  Custom Field Suite. This enabled us to make custom field groups. For the abouts page we made field groups consist of a banner image and 2 input fields for story and teams. CFS()->get() is added in out about.php this gets the data that the user put in the custom field group then adds it in the php file.
 
