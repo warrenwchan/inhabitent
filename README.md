@@ -41,3 +41,11 @@ In each journal entry, we only want to display a spesific word count so we can a
 ![screen shot 2017-03-05 at 4 04 05 pm-min](https://cloud.githubusercontent.com/assets/24995518/23592991/ba037a66-01bd-11e7-87a6-84e4dda0788c.png)
 The about page hero image had to be able to be changed by the user. In the wordpress admin page we downloaded a tool called  Custom Field Suite. This enabled us to make custom field groups. For the abouts page we made field groups consist of a banner image and 2 input fields for story and teams. CFS()->get() is added in out about.php this gets the data that the user put in the custom field group then adds it in the php file.
 
+### WIDGET BAR 
+We created a custom widget for our business hour and contact information. We were provided a red widget boiler plate and in there we added the appropriate fields and enabled the widget in the admin homepage under plug ins.
+
+## STRUGGLES
+My my stuggle in this project was much to do with modulizing everthing and trying not to repeat myself. Another struggle point was figering out which template was appropriate for the page and trying to link the page to the right template then figuring out which template structure to use. Building the function for hte widget was also challenging. 
+
+## CONCLUTION 
+In conclusion wordpress is a good platform that can handle building multipage websites. When i understood the concept of template hierarchy and the importance of this to structure my website, it was clear why 74,652,825 sites depend on this platform. As a developer weorpress is to a degree limiting but as long as we develop a strong structure, for the user its alot eaiser to use and maintain. 
