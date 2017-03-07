@@ -98,7 +98,7 @@
 
 /** find us*/
 
-.find-us {
+.find-us{
 
     .site-main {
         display: flex;
@@ -188,4 +188,64 @@
         padding: 30px 0;
         border-bottom: 1px solid lightgrey;
     }
+}
+
+// search
+.search {
+     .content-area {
+        display: flex;
+        max-width: 1120px;
+        margin-top: 50px;
+    
+        .site-main{
+            width: 820px;
+            border-right: 1px solid lightgrey;
+        }
+
+        .page-header {
+            @include san-serif;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            width: 90%;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        article {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            @include san-serif;
+            a{
+                text-decoration: none;
+            }
+        }
+
+        p{
+            line-height: 28px;
+        }
+
+        .read-more { 
+            @include button;
+        }
+
+        .widget-area{
+            width: 300px;
+            padding: 50px 0 0 50px;
+            h2{
+                font-family: 'novecentosanswide';
+                text-transform: uppercase;
+                letter-spacing: 2px; 
+            }
+            aside{
+                i{
+                    padding-right: 10px;
+                }
+            }
+        }
+     }
 }

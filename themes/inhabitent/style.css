@@ -403,7 +403,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111;
+    color: #f0e4d1;
     outline: none; }
 
 input[type="text"],
@@ -1501,3 +1501,55 @@ object {
   font-size: 40px;
   padding: 30px 0;
   border-bottom: 1px solid lightgrey; }
+
+.search .content-area {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  margin-top: 50px; }
+  .search .content-area .site-main {
+    width: 820px;
+    border-right: 1px solid lightgrey; }
+  .search .content-area .page-header {
+    font-family: 'novecentosanswide';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    width: 90%;
+    border-bottom: 1px solid lightgrey; }
+  .search .content-area article {
+    margin-bottom: 60px; }
+  .search .content-area h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'novecentosanswide'; }
+    .search .content-area h2 a {
+      text-decoration: none; }
+  .search .content-area p {
+    line-height: 28px; }
+  .search .content-area .read-more {
+    padding: 10px 20px;
+    color: black;
+    background: none;
+    border: 1px solid black;
+    text-transform: uppercase;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    font-family: 'novecentosanswide'; }
+    .search .content-area .read-more:hover {
+      background: #248A83;
+      border: none;
+      color: white;
+      text-decoration: none;
+      cursor: pointer; }
+  .search .content-area .widget-area {
+    width: 300px;
+    padding: 50px 0 0 50px; }
+    .search .content-area .widget-area h2 {
+      font-family: 'novecentosanswide';
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .search .content-area .widget-area aside i {
+      padding-right: 10px; }

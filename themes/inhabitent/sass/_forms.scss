@@ -46,7 +46,7 @@ textarea {
 	border-radius: 3px;
 
 	&:focus {
-		color: #111;
+		color: $nav-hover-color;
 		outline: none;
 	}
 }

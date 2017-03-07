@@ -90,10 +90,7 @@ function red_starter_scripts() {
 	wp_enqueue_script('jquery');
      if ( is_page( 'home' ) || is_page('about') ) {
     	wp_enqueue_script('red_comments', get_template_directory_uri() . '/js/main.js' );
-     }
-     else{
-        wp_enqueue_script('red_comments', get_template_directory_uri() . '/js/main2.js');
-     }
+	 }
 
 	wp_localize_script('red_comments', 'red_vars', array(
 		'ajax_url' => admin_url( 'admin-ajax.php' ),
