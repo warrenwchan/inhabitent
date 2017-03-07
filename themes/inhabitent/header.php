@@ -30,7 +30,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="logo" >
 						<a href="<?php echo get_home_url(); ?>">
-							<div class="home-logo"> </div>
+							<div class="home-logo"></div>
 						</a>
 					</div>
 					<div class="site-nav">

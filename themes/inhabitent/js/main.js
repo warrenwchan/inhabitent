@@ -22,5 +22,4 @@
   $('.search-submit').on('blur', function() {
        $('.search-field').animate( { width: 'toggle' }, 500 );
    });
-console.log('hello');
 })( jQuery );
