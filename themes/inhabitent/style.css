@@ -786,6 +786,7 @@ object {
     width: 100%; }
   .page-template-about .site-content .about-contain {
     width: 100vw;
+    height: 780px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
