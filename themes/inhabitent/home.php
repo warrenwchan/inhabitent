@@ -1,9 +1,9 @@
- <?php
+<?php
 /**
- * Template Name: Journal Template
- *
- * @package RED_Starter_Theme
- */
+* Template Name: Journal Template
+*
+* @package RED_Starter_Theme
+*/
 
 get_header(); ?>
 	<div class="journal">
@@ -23,7 +23,7 @@ get_header(); ?>
 					<?php endif; ?>
 				</div>
 				<?php get_sidebar(); ?>
-				
+
 			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div>

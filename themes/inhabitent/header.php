@@ -1,9 +1,9 @@
 <?php
 /**
- * The header for our theme.
- *
- * @package RED_Starter_Theme
- */
+* The header for our theme.
+*
+* @package RED_Starter_Theme
+*/
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
