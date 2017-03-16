@@ -33,31 +33,32 @@
 						</li>
                     <?php endforeach; ?>
                 </ul>
-                <?php
-                    the_archive_description( '<div e="taxonomy-description">', '</div>' );
-                ?>
+                <?php the_archive_description( '<div e="taxonomy-description">', '</div>' ); ?>
+			</div>
 		</section>
 		
 		<section class="contain">
 			<h2>inhabitent journal</h2>
 			<div class="journal-feature">
 				<?php
-				global $post;
-				$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'post_date' );
-				$postslist = get_posts( $args );
-				foreach ( $postslist as $post ) :
-				setup_postdata( $post ); ?> 
-					<div class="journal-feature-item" >
-						<?php the_post_thumbnail( 'medium' ); ?>
-						<div class="journal-feature-text" >
-							<div class="comments"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></div>
-							<div class="title"><?php the_title(); ?>  </div> 
-							<a href="<?php the_permalink();?>" class="readmore">read entry</a>
-						</div>
+					global $post;
+					$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'post_date' );
+					$postslist = get_posts( $args );
+					foreach ( $postslist as $post ) :
+					setup_postdata( $post );
+				?>
+				<div class="journal-feature-item" >
+					<?php the_post_thumbnail( 'medium' ); ?>
+					<div class="journal-feature-text" >
+						<div class="comments"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></div>
+						<div class="title"><?php the_title(); ?>  </div> 
+						<a href="<?php the_permalink();?>" class="readmore">read entry</a>
 					</div>
+				</div>
 				<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 		</section>
+		
 		<section class="contain">
 			<h2>latest adventure</h2>
 			<div class="adventure-container">

@@ -12,7 +12,6 @@ get_header(); ?>
 		<section class="contain">
 			<?php if ( have_posts() ) : ?>
 			<header class="page-header">
-			
                 <?php 
 					add_filter('get_the_archive_title', 'product_archive_title');
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -34,18 +33,15 @@ get_header(); ?>
                 </div><!-- .product-list-style -->
             </header><!-- .page-header --> 
 		</section>
+
 		<section class="contain">
 			<div class="shop-contain" >
-				<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-
-						<?php get_template_part( 'template-parts/content','item' );?>
-
-					<?php endwhile; ?>
-					
-					<?php else : ?>
-						<?php get_template_part( 'template-parts/content', 'none' ); ?>
-					<?php endif; ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/content','item' );?>
+				<?php endwhile; ?>
+				<?php else : ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php endif; ?>
 			</div>
 		</sectionl>
 		</main><!-- #main -->
